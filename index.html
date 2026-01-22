@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸運號碼抽選機</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Premium Number Drawing Machine">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>LUCKY DRAW</h1>
+            <p>1-99 Random Generator</p>
+        </header>
+
+        <main>
+            <div id="result-area" class="result-container">
+                <!-- Numbers will appear here -->
+                <div class="placeholder-text">準備抽選</div>
+            </div>
+
+            <div class="controls">
+                <div class="input-group">
+                    <label for="count-input">抽選數量 (1-5)</label>
+                    <input type="number" id="count-input" min="1" max="5" value="1">
+                </div>
+                
+                <div class="button-group">
+                    <button id="draw-btn" class="btn primary-btn">
+                        <span class="btn-content">DRAW</span>
+                    </button>
+                    <button id="clear-btn" class="btn secondary-btn">
+                        <span class="btn-content">CLEAR</span>
+                    </button>
+                    <button id="export-btn" class="btn secondary-btn">
+                        <span class="btn-content">EXPORT</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
